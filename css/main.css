@@ -23,6 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--basic);
   font-weight: 400;
+  line-height: 1.4;
 }
 
 a {
@@ -38,11 +39,31 @@ h1 {
   font-size: 9.6rem;
   font-family: "Nothing You Could Do", cursive;
   color: var(--accent);
+  line-height: 1;
 }
 
 h2 {
   font-weight: 800;
   font-size: 5rem;
+  line-height: 1;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 1;
+  color: var(--dark);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 /* header */
@@ -107,11 +128,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 
-.line .sun {
+.sun {
   font-size: 1.8rem;
   margin: 0 10px;
+  color: var(--accent);
 }
 
 .line_left,
@@ -140,4 +163,65 @@ header {
 .line_right::before {
   right: 0;
   border-right-color: var(--light);
+}
+
+.sub_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.sub_text p {
+  font-size: 1.4rem;
+}
+
+.sub_text .btn {
+  font-size: 1.4rem;
+  color: var(--dark);
+  padding: 10px 22px;
+  background-color: var(--light);
+  border-radius: 6px;
+}
+
+/* our_story */
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.our_story {
+  padding: 120px 30px;
+}
+
+.our_story .inner > div {
+  width: 580px;
+}
+
+.our_story .info {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.go_btn {
+  font-size: 1.6rem;
+  color: var(--accent);
+  position: relative;
+  margin-top: 40px;
+}
+
+.go_btn::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
 }
