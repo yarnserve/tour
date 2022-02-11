@@ -53,6 +53,7 @@ h3 {
   font-size: 3.6rem;
   line-height: 1;
   color: var(--dark);
+  text-transform: uppercase;
 }
 
 h4 {
@@ -77,6 +78,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .logo img {
@@ -186,21 +188,22 @@ header {
 
 /* our_story */
 .inner {
-  width: 1180px;
+  /* width: 1180px; */
+  max-width: 1180px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
 }
 
-.our_story {
+.section {
   padding: 120px 30px;
 }
 
-.our_story .inner > div {
-  width: 580px;
+.section .inner > div {
+  width: 50%;
 }
 
-.our_story .info {
+.section .info {
   padding: 30px;
   text-align: center;
   display: flex;
@@ -224,4 +227,46 @@ header {
   width: 100%;
   height: 2px;
   background-color: var(--accent);
+}
+
+/* banner */
+.banner {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner.item_01 {
+  background-image: url("../images/slide_02.jpg");
+}
+
+.banner.item_02 {
+  background-image: url("../images/slide_03.jpg");
+}
+
+.banner > div {
+  text-align: center;
+}
+
+.banner .light {
+  color: var(--light);
+}
+
+/* travel, yourself */
+.travel .photo,
+.yourself .photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* footer */
+footer {
+  padding: 70px 0 110px;
+  background-color: var(--dark);
+  color: var(--light);
 }
