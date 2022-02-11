@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700;800&display=swap");
+/* font-family: 'Nothing You Could Do', cursive;
+font-family: 'Open Sans', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --basic: #222;
+  --dark: #070e1f;
+  --light: #f3f7ff;
+  --accent: #d1a33f;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--basic);
+  font-weight: 400;
 }
 
 a {
@@ -13,16 +34,28 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 9.6rem;
+  font-family: "Nothing You Could Do", cursive;
+  color: var(--accent);
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+/* header */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 60px;
-  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .logo img {
@@ -31,9 +64,80 @@ header {
 
 .nav {
   display: flex;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 60px;
 }
 
+/* slide */
 .slide_wrapper {
-  background-color: red;
-  height: 600px;
+  position: relative;
+}
+
+.slide {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide.item_01 {
+  background-image: url("../images/slide_01.jpg");
+}
+
+.slide.item_02 {
+  background-image: url("../images/slide_02.jpg");
+}
+
+.slide.item_03 {
+  background-image: url("../images/slide_03.jpg");
+}
+
+.slide_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line .sun {
+  font-size: 1.8rem;
+  margin: 0 10px;
+}
+
+.line_left,
+.line_right {
+  width: 100%;
+  max-width: 14rem;
+  height: 3px;
+  background-color: var(--light);
+  position: relative;
+}
+
+.line_left::before,
+.line_right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+}
+
+.line_left::before {
+  left: 0;
+  border-left-color: var(--light);
+}
+
+.line_right::before {
+  right: 0;
+  border-right-color: var(--light);
 }
