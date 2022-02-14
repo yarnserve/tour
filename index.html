@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/parallax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -21,6 +23,7 @@
         <li><a href="#">Experiences</a></li>
         <li><a href="#">Activities</a></li>
       </ul>
+      <div class="bars"><i class="xi-bars"></i></div>
     </header>
 
     <section class="slide_wrapper">
@@ -46,7 +49,7 @@
 
     <section class="section our_story">
       <div class="inner">
-        <div class="info">
+        <div class="info left_ani">
           <h1>Discover</h1>
           <h3>Our story</h3>
           <div class="sun"><i class="xi-brightness"></i></div>
@@ -56,7 +59,7 @@
           </h4>
           <a href="#" class="go_btn">go on a trip</a>
         </div>
-        <div class="photo"><img src="./images/our_story.jpg" alt="our_story" /></div>
+        <div class="photo right_ani"><img src="./images/our_story.jpg" alt="our_story" /></div>
       </div>
     </section>
 
@@ -69,13 +72,13 @@
 
     <section class="section travel">
       <div class="inner">
-        <div class="photo">
+        <div class="photo left_ani">
           <div><img src="./images/travel_01.jpg" alt="travel_01" /></div>
           <div><img src="./images/travel_02.jpg" alt="travel_02" /></div>
           <div><img src="./images/travel_03.jpg" alt="travel_03" /></div>
           <div><img src="./images/travel_04.jpg" alt="travel_04" /></div>
         </div>
-        <div class="info">
+        <div class="info right_ani">
           <h1>Discover</h1>
           <h3>travel</h3>
           <div class="sun"><i class="xi-brightness"></i></div>
@@ -108,13 +111,14 @@
           <a href="#" class="go_btn">go on a trip</a>
         </div>
         <div class="photo">
-          <div><img src="./images/yourself_01.jpg" alt="yourself_01" /></div>
-          <div><img src="./images/yourself_02.jpg" alt="yourself_02" /></div>
+          <div class="top_ani"><img src="./images/yourself_01.jpg" alt="yourself_01" /></div>
+          <div class="bottom_ani"><img src="./images/yourself_02.jpg" alt="yourself_02" /></div>
         </div>
       </div>
     </section>
 
     <footer>
+      <div class="go_top"><i class="xi-angle-up"></i></div>
       <div class="inner">
         <div class="footer_info">
           <h4>ABOUT Tour</h4>
@@ -160,12 +164,6 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-      $(".slides").slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-      });
-    </script>
+    <script src="./js/common.js"></script>
   </body>
 </html>
