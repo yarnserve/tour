@@ -42,3 +42,10 @@ $(".banner.item_02").parallax({ imageSrc: "images/slide_03.jpg" });
 $(".go_top").click(function () {
   $("html").animate({ scrollTop: 0 }, 600);
 });
+
+// 메뉴 버튼
+$(".bars").on("click", function () {
+  $(".nav").toggleClass("active");
+  $(this).toggleClass("fixed");
+  $(this).find("i").toggleClass("xi-close");
+});
