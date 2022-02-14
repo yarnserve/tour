@@ -2,4 +2,4 @@
 
 ## githup page
 
-[https://yarnserve.github.io/tour/](https://yarnserve.github.io/tour/){:target="\_blank"}
+[https://yarnserve.github.io/tour/](https://yarnserve.github.io/tour/)
