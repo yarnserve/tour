@@ -135,7 +135,7 @@ header {
 
 .sun {
   font-size: 1.8rem;
-  margin: 0 10px;
+  margin: 10px 0;
   color: var(--accent);
 }
 
@@ -269,4 +269,65 @@ footer {
   padding: 70px 0 110px;
   background-color: var(--dark);
   color: var(--light);
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .inner {
+  flex-direction: column;
+}
+
+.footer_info {
+  margin-bottom: 60px;
+}
+
+.footer_info .sun {
+  margin: 20px 0 26px;
+}
+
+.footer_info p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.footer_extra,
+.social_icons {
+  display: flex;
+}
+
+.footer_extra {
+  justify-content: space-evenly;
+}
+
+.social_icons {
+  font-size: 24px;
+  gap: 36px;
+  margin-top: 35px;
+}
+
+.email form {
+  margin-top: 35px;
+  position: relative;
+}
+
+.email input {
+  width: 256px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  padding: 0 60px 0 20px;
+}
+
+.email_icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 24px;
+  color: var(--basic);
 }
